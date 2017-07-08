@@ -22,7 +22,7 @@ write.table(x=tweets, file=nombreArchivo, col.names = TRUE, sep = ";")
 
 
 #Descargar tweets de radio canela
-emisora <- "@CanelaRadioEc"
+emisora <- "CanelaRadioEc"
 listaTweets <- searchTwitter(searchString = emisora, n=3700)
 tweets <- twListToDF(listaTweets)
 nombreArchivo <- paste("C:/Users/David/Desktop/tweets/",emisora,"_",fecha,".txt", sep="")
